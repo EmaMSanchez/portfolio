@@ -1,0 +1,111 @@
+/**
+ * Download Button Styles
+ * Estilos para el botón de descarga de Elementor
+ */
+
+.elementor-button-wrapper {
+    display: block;
+    text-align: inherit;
+}
+
+.elementor-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: middle;
+    /* Estilos por defecto */
+    padding: 12px 24px;
+    background-color: #0073aa;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+}
+
+.elementor-button:hover,
+.elementor-button:focus {
+    text-decoration: none;
+}
+
+.elementor-button:focus {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+}
+
+.elementor-button-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementor-button-text {
+    display: inline-block;
+}
+
+.elementor-button-icon {
+    display: inline-flex;
+    align-items: center;
+}
+.elementor-button-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.elementor-align-icon-left {
+    margin-right: 8px;
+}
+
+.elementor-align-icon-right {
+    margin-left: 8px;
+}
+
+.elementor-button i,
+.elementor-button svg {
+    vertical-align: middle;
+    line-height: 1;
+}
+
+/* Alineación */
+.elementor-align-left .elementor-button-wrapper {
+    text-align: left;
+}
+
+.elementor-align-center .elementor-button-wrapper {
+    text-align: center;
+}
+
+.elementor-align-right .elementor-button-wrapper {
+    text-align: right;
+}
+
+.elementor-align-justify .elementor-button-wrapper .elementor-button {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .elementor-button {
+        font-size: 14px;
+    }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .elementor-button {
+        transition: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .elementor-button-wrapper {
+        display: none;
+    }
+}
